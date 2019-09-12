@@ -2,7 +2,10 @@ import React, { useState, useEffect } from 'react';
 import NasaAPI from '../../calls'
 
 // Components
-import { ImgContainer } from './ImgContainer'
+ import { ImgContainer } from './ImgContainer'
+
+// Styled components
+import style from '../StyledComponents/StyledComponents'
 
 export const Display = () => {
 
@@ -21,8 +24,8 @@ export const Display = () => {
     console.log(apod)
 
     return (
-        <div>
+        <style.Display>
             <ImgContainer obj={apod} />
-        </div>
+        </style.Display>
     )
 }

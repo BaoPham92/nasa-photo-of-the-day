@@ -1,11 +1,14 @@
 import React from 'react';
 
+// Styled components
+import style from '../StyledComponents/StyledComponents'
+
 export const Description = ({
     title,
     explanation
 }) => (
-        <article>
+        <style.Article>
             <h1>{title}</h1>
             <p>{explanation}</p>
-        </article>
+        </style.Article>
     )
